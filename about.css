@@ -1,15 +1,166 @@
-.about img {
-  width: 100%;
-  height: 100%;
+@font-face {
+  font-family: "SpaceSquareUI";
+  src:
+    url("/assets/fonts/squarespace-ui-font.woff2") format("woff2"),
+    url("/assets/fonts/squarespace-ui-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "SpaceSquareUI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #faf9f7; /* A subtle, warm, lovely off-white */
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Stylish Back Button */
 .arrow {
-  font-size: 40px;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-  color: black;
-  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   text-decoration: none;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateX(-5px);
+  color: #b08d6a; /* Lovely warm accent */
+}
+
+.about-container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  gap: 80px;
+  align-items: center;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-image-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.about-image-wrapper:hover .about-image {
+  transform: scale(1.04);
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #8c8c8c;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.bio p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.contact-info {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contact-info h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #8c8c8c;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.contact-info p:hover {
+  color: #b08d6a; /* Lovely warm accent */
+  cursor: pointer;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+  }
+  
+  body {
+    padding: 20px;
+  }
+  
+  .arrow {
+    top: 25px;
+    left: 20px;
+  }
 }

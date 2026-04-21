@@ -1,19 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About - Lars Tornoe</title>
     <link rel="stylesheet" href="/about.css" />
   </head>
   <body>
-    <button onclick="back()" class="arrow">&#8592;</button>
+    <!-- The back button explicitly navigates back to the main page -->
+    <a href="/larstornoe.html" class="arrow">&#8592; Back</a>
 
-    <div class="about">
-      <h1>About Lars Tornoe</h1>
+    <div class="about-container">
+      <div class="about-image-wrapper">
+        <img src="/images/image1.jpg" alt="Lars Tornoe" class="about-image" />
+      </div>
+      
+      <div class="about-content">
+        <h1>Lars Tornoe</h1>
+        <h2 class="subtitle">Norwegian Designer</h2>
+        
+        <div class="bio">
+          <p>Lars Tornøe is a Norwegian design studio devoted to furniture design and related fields, working with various clients across Northern Europe.</p>
+          <p>Tornøe's work has received several awards such as Designer of the Year in Norway and the Award for Design Excellence, and his work has been shown at exhibitions worldwide.</p>
+        </div>
 
-      <img src="/images/image1.jpg" alt="" />
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p>mail@larstornoe.com</p>
+          <p>Instagram: @larstornoe</p>
+        </div>
+      </div>
     </div>
   </body>
-  <script src="/script.js"></script>
 </html>
