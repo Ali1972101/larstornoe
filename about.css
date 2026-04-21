@@ -18,27 +18,28 @@ body {
   background-color: #faf9f7; /* A subtle, warm, lovely off-white */
   color: #1a1a1a;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   padding: 40px;
 }
 
-/* Stylish Back Button */
+
 .arrow {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  font-size: 16px;
+  /* top: 40px; */
+  /* left: 40px; */
+  font-size: 34px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   text-decoration: none;
   color: #1a1a1a;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 10px;
   z-index: 10;
   transition: all 0.3s ease;
+  border: 0px solid black;
 }
 
 .arrow:hover {
@@ -71,7 +72,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 2px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
 .about-image {
@@ -150,15 +151,15 @@ body {
     gap: 40px;
     margin-top: 80px;
   }
-  
+
   .about-content h1 {
     font-size: 3rem;
   }
-  
+
   body {
     padding: 20px;
   }
-  
+
   .arrow {
     top: 25px;
     left: 20px;
