@@ -409,6 +409,10 @@ header h1 {
   .icon-hamburger {
     display: none;
   }
+
+  .navdiv2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 884px) {
