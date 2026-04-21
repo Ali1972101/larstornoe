@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Segoe UI", Arial, sans-serif; */
+}
+@font-face {
+  font-family: "SpaceSquareUI";
+  src:
+    url("/assets/fonts/squarespace-ui-font.woff2") format("woff2"),
+    url("/assets/fonts/squarespace-ui-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "SpaceSquareUI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+  text-decoration: none;
+}
+
+.atag {
+  text-decoration: none;
+  color: black;
+}
+
+.atag1 {
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+}
+
+.atag1:hover {
+  color: #555;
+  background-color: rgb(165, 52, 52);
+  border: 0px solid black;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-right: 30px;
+}
+
+.navdiv {
+  display: flex;
+  gap: 15px;
+  margin-right: 40px;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* padding: 10px; */
+  /* justify-self: center; */
+  gap: 15px;
+  margin: 40px;
+  /* position: relative; */
+}
+
+.img {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  /* overflow: hidden; */
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 60%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text1 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text2 {
+  position: absolute;
+  top: 115%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text2 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text3 {
+  position: absolute;
+  top: 115%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text3 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text4 {
+  position: absolute;
+  top: 175%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text4 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text5 {
+  position: absolute;
+  top: 175%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text5 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text6 {
+  position: absolute;
+  top: 230%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text6 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text7 {
+  position: absolute;
+  top: 230%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text7 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text8 {
+  position: absolute;
+  top: 290%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text8 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text9 {
+  position: absolute;
+  top: 290%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text9 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text10 {
+  position: absolute;
+  top: 345%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text10 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+.overlay-text11 {
+  position: absolute;
+  top: 345%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text11 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text12 {
+  position: absolute;
+  top: 400%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text12 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text13 {
+  position: absolute;
+  top: 400%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text13 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text14 {
+  position: absolute;
+  top: 460%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text14 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text15 {
+  position: absolute;
+  top: 460%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text15 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text16 {
+  position: absolute;
+  top: 520%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text16 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text17 {
+  position: absolute;
+  top: 520%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text17 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text101 {
+  position: absolute;
+  top: 575%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text101 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text19 {
+  position: absolute;
+  top: 575%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text19 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text20 {
+  position: absolute;
+  top: 635%;
+  color: black;
+  left: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text20 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+.overlay-text21 {
+  position: absolute;
+  top: 635%;
+  color: black;
+  left: 53%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container a:hover .overlay-text21 {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
+@media screen and (max-width: 1740px) {
+  .icon-hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navdiv2 {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 70px; */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s ease;
+    cursor: pointer;
+    border: 0px solid black;
+    z-index: 3;
+    /* padding-top: 160px; */
+    color: rgb(22, 21, 21);
+      background-color: burlywood;
+      border-radius: 5px;
+      display: none;
+    }
+
+  .navdiv {
+    display: none;
+  }
+
+  .icon-hamburger {
+    display: block;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 90px;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* font-size: 24px; */
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text1 {
+    position: absolute;
+    top: 50rem;
+    left: 5rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* font-size: 24px; */
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text1 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text2 {
+    position: absolute;
+    top: 170%;
+    left: 60px;
+    /* transform: translate(-50%, -50%); */
+    color: black;
+    /* font-size: 24px; */
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text2 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text3 {
+    position: absolute;
+    top: 230%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text3 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text4 {
+    position: absolute;
+    top: 283%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text4 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text5 {
+    position: absolute;
+    top: 345%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text5 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text6 {
+    position: absolute;
+    top: 400%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text6 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text7 {
+    position: absolute;
+    top: 460%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text7 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text8 {
+    position: absolute;
+    top: 515%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text8 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .overlay-text9 {
+    position: absolute;
+    top: 575%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text9 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text10 {
+    position: absolute;
+    top: 630%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text10 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text11 {
+    position: absolute;
+    top: 690%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text11 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text12 {
+    position: absolute;
+    top: 750%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text12 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text13 {
+    position: absolute;
+    top: 800%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text13 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text14 {
+    position: absolute;
+    top: 860%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text14 {
+    visibility: visible;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .overlay-text15 {
+    position: absolute;
+    top: 915%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text15 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+    background-color: white;
+  }
+
+  .overlay-text16 {
+    position: absolute;
+    top: 975%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text16 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text17 {
+    position: absolute;
+    top: 1035%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+  }
+
+  .image-container a:hover .overlay-text17 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-tex18 {
+    position: absolute;
+    top: 1080%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text18 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+  .overlay-text19 {
+    position: absolute;
+    top: 1150%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text19 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text101 {
+    position: absolute;
+    top: 1090%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text101 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+  .overlay-text20 {
+    position: absolute;
+    top: 1205%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text20 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+
+  .overlay-text21 {
+    position: absolute;
+    top: 1265%;
+    left: 60px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .image-container a:hover .overlay-text21 {
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+.icon-hamburger {
+  position: fixed;
+  font-size: 30px;
+
+  top: 4.5%;
+  right: 8%;
+  z-index: 2;
+  /* position: fixed; */
+  transition: all 1s ease;
+}
+.icon-hamburger:hover {
+  cursor: pointer;
+}
+
+.close-btn {
+  font-size: 30px;
+  display: none;
+  position: fixed;
+  top: 4.5%;
+  right: 8%;
+  z-index: 1000;
+  transition: all 1s ease;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
