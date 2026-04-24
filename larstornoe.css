@@ -390,6 +390,10 @@ header h1 {
   background-color: white;
 }
 
+.navdiv2{
+  overflow: hidden;
+}
+
 .overlay-text21 {
   position: absolute;
   top: 635%;
@@ -405,12 +409,21 @@ header h1 {
   background-color: white;
 }
 
+
 @media screen and (max-width: 1740px) {
   .icon-hamburger {
     display: none;
   }
 
   .navdiv2 {
+    display: none;
+  }
+
+  .icon-hamburger{
+    display: none;
+  }
+
+  .close-btn{
     display: none;
   }
 }
@@ -423,7 +436,7 @@ header h1 {
   .navdiv2 {
     position: fixed;
     top: 10%;
-    right: 5%;
+    right: 0%;
     width: 50%;
     height: 50%;
     display: flex;
@@ -441,7 +454,7 @@ header h1 {
     z-index: 3;
     /* padding-top: 160px; */
     color: rgb(22, 21, 21);
-      background-color: burlywood;
+      background-color:white;
       border-radius: 5px;
       display: none;
     }
